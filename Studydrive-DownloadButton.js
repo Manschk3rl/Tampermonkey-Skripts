@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Studydrive-DownloadButton
 // @namespace    https://github.com/Manschk3rl/Tampermonkey-Skripts
-// @version      1.1
+// @version      1.0
 // @description  Stellt die originale Funktionalität des Download-Buttons wieder her.
 // @author       Manschk3rl
 // @match        https://www.studydrive.net/*/doc/*
@@ -33,7 +33,7 @@ function main() {
 
 function downloadPDF() {
     window.PDFViewerApplication.pdfDocument.getData().then( data => {
-        const downloadLink = document.createElement(GM_info.script.name);
+        const downloadLink = document.createElement("pdf");
         downloadLink.href = window.URL.createObjectURL(new Blob([data], {type: "application/pdf"}));
         downloadLink.download = getDocName();
         downloadLink.click();
