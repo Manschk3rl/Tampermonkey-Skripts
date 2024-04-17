@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Studydrive-DownloadButton
 // @namespace    https://github.com/Manschk3rl/Tampermonkey-Skripts
-// @version      1.0
+// @version      1.1
 // @description  Stellt die originale Funktionalität des Download-Buttons wieder her.
 // @author       Manschk3rl
 // @match        https://www.studydrive.net/*/doc/*
