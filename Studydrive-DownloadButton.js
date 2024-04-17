@@ -33,7 +33,7 @@ function main() {
 
 function downloadPDF() {
     window.PDFViewerApplication.pdfDocument.getData().then( data => {
-        const downloadLink = document.createElement("pdf");
+        const downloadLink = document.createElement("a");
         downloadLink.href = window.URL.createObjectURL(new Blob([data], {type: "application/pdf"}));
         downloadLink.download = getDocName();
         downloadLink.click();
